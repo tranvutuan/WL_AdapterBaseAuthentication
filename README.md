@@ -1,0 +1,4 @@
+WL_AdapterBaseAuthentication
+============================
+
+AdapterBaseAuthentication
