@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BFA8DEB7-E40D-4CBF-9598-E94E878170E1</string>
+	<string>57C2A937-205D-4FD7-B1CA-A87E677A414A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>iOS_AdapterBaseAuthentication</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>C78E29AB-0DD7-4E0E-BF5C-62C95A9AEA51</string>
 			<key>IDESourceControlWCCName</key>
-			<string>iOS_FormBaseAuthentication</string>
+			<string>iOS_AdapterBaseAuthentication</string>
 		</dict>
 	</array>
 </dict>

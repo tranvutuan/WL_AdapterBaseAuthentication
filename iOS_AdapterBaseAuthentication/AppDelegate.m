@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  iOS_AdapterBaseAuthentication
+//  FormBaseAuthentication
 //
-//  Created by VuTuan Tran on 2014-09-08.
+//  Created by VuTuan Tran on 2014-09-05.
 //  Copyright (c) 2014 dhltd.apple. All rights reserved.
 //
 
@@ -13,6 +13,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.getDataProcedureInvocation = [[WLProcedureInvocationData alloc] initWithAdapterName: NSLocalizedString(@"adapterName", nil)
+                                                                               procedureName:NSLocalizedString(@"getSecretData", nil)];
+    self.submitAuthProcedureInvocation = [[WLProcedureInvocationData alloc] initWithAdapterName:NSLocalizedString(@"adapterName", nil)
+                                                                                  procedureName:NSLocalizedString(@"submitAuthentication", nil)];
+    self.challengeHandler = [[TNAChallengeHander alloc] initWithRealm:NSLocalizedString(@"authRealmName", nil)];
+
+
     return YES;
 }
 							
