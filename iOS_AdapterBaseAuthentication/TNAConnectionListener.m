@@ -25,7 +25,7 @@
 
 #pragma mark - WLDelegate
 -(void)onSuccess:(WLResponse *)response {
-    NSLog(@"TNA5");
+    //NSLog(@"TNA5");
 
     NSDictionary *dict = [response getResponseJson];
     BOOL isUseAuthenticated = [dict[@"userInfo"][@"SingleStepAuthRealm"][@"isUserAuthenticated"] integerValue];

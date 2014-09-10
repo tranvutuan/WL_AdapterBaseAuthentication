@@ -17,13 +17,16 @@
 }
 
 #pragma mark - WLDelegate
--(void)onSuccess:(WLResponse *)response {    
-    NSString *secretData = [response getResponseJson][@"secretData"];
-    [self.controller displaySecretData:secretData];
+-(void)onSuccess:(WLResponse *)response {
+    //NSLog(@"TNA1 %@",[response getResponseJson]);
 
-    NSLog(@"TNA1");
+    NSString *secretData = [response getResponseJson][@"secretData"];
+    NSString *errorMessage = [response getResponseJson][@"errorMessage"];
+
+    [self.controller displayMessage:secretData ? secretData : errorMessage];
+
 }
 -(void)onFailure:(WLFailResponse *)response {
-    NSLog(@"TNA2");
+    //NSLog(@"TNA2");
 }
 @end

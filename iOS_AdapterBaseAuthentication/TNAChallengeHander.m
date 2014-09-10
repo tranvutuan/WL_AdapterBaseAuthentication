@@ -13,13 +13,12 @@
 
 #pragma mark -  Test whether there is a custom challenge to be handled in the response
 -(BOOL)isCustomResponse:(WLResponse *)response {
-    NSLog(@"TNA0");
+    //NSLog(@"TNA0 %@",[response getResponseJson]);
     NSDictionary *dict = [response getResponseJson];
     if (!response.responseText)
         return false;
     
-	if (dict[@"authRequired"] != nil && [dict[@"authRequired"] integerValue] == 0 )
-//    if (dict[@"authRequired"] && [dict[@"authRequired"] integerValue])
+	if (dict[@"authRequired"] != nil  )
 		return true;
 	else
 		return false;
@@ -28,22 +27,28 @@
 
 #pragma mark - Handle the challenge
 -(void)handleChallenge: (WLResponse *)response {
-    NSLog(@"TNA8");
-    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    [[WLClient sharedInstance] invokeProcedure:delegate.getDataProcedureInvocation withDelegate:[[TNAInvokeListener alloc] initWithViewController:self.controller]];
+    NSDictionary *responseJSON = [response getResponseJson];
+    if ([responseJSON[@"authRequired"] intValue] == 1) {
+        if ( ![responseJSON[@"errorMessage"] isKindOfClass:[NSNull class]] )
+            [self.controller displayMessage:responseJSON[@"errorMessage"] ];
+        else
+            [self.controller showLoginForm];
+    }
+    else
+        [self submitSuccess:response];
 }
 
 #pragma mark - WLDelegate
 -(void) onFailure:(WLFailResponse *)response {
-    NSLog(@"TNA3");
+    //NSLog(@"TNA3");
     [self submitFailure:response];
-    [self.controller displaySecretData:response.responseText];
+    [self.controller displayMessage:response.responseText];
 }
 -(void) onSuccess:(WLResponse *)response {
+    //NSLog(@"TNA4 %@",[response getResponseJson]);
     [self submitSuccess:response];
     NSString *message = [response getResponseJson][@"errorMessage"];
-    [self.controller displaySecretData:message];
-    NSLog(@"TNA4");
+    [self.controller displayMessage:message];
 }
 
 
