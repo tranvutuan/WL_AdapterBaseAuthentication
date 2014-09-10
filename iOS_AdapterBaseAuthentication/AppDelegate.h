@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TNAChallengeHander.h"
 #import "WLProcedureInvocationData.h"
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, WLDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) TNAChallengeHander *challengeHandler;

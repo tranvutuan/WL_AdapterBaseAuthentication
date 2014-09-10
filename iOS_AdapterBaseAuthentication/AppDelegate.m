@@ -19,6 +19,8 @@
                                                                                   procedureName:NSLocalizedString(@"submitAuthentication", nil)];
     self.challengeHandler = [[TNAChallengeHander alloc] initWithRealm:NSLocalizedString(@"authRealmName", nil)];
 
+    [[WLClient sharedInstance] wlConnectWithDelegate:self];
+
 
     return YES;
 }
@@ -48,6 +50,20 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)onSuccess:(WLResponse *)response {
+    
+}
+
+-(void)onFailure:(WLFailResponse *)response {
+    UIAlertView * alert =[[UIAlertView alloc ] initWithTitle:NSLocalizedString(@"Message", nil)
+                                                     message:response.errorMsg
+                                                    delegate:self
+                                           cancelButtonTitle:NSLocalizedString(@"OK",nil)
+                                           otherButtonTitles: nil];
+    alert.alertViewStyle = UIAlertViewStyleDefault;
+    [alert show];
 }
 
 @end
