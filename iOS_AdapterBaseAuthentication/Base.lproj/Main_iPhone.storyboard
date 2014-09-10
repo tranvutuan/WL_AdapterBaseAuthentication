@@ -24,7 +24,7 @@
                                     <action selector="connectToServer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eMb-Ig-Ido"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v8G-IA-dCw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="v8G-IA-dCw">
                                 <rect key="frame" x="163" y="93" width="151" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="257" y="65"/>
+            <point key="canvasLocation" x="-22" y="40"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zfk-zf-l2c">
