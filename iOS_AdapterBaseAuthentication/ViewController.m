@@ -19,8 +19,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.title = NSLocalizedString(@"ViewTitle", nil);
-    self.delegate = [[UIApplication sharedApplication] delegate];
+    self.delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     self.delegate.challengeHandler.controller = self;
+    
+    [[WLClient sharedInstance] registerChallengeHandler:self.delegate.challengeHandler];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,7 +32,8 @@
 
 #pragma mark - Check connection
 - (IBAction)connectToServer:(id)sender {
-    [[WLClient sharedInstance] wlConnectWithDelegate:[[TNAConnectionListener alloc] initWithViewController:self]];
+    AppDelegate *delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [[WLClient sharedInstance] invokeProcedure:delegate.getDataProcedureInvocation withDelegate:[[TNAInvokeListener alloc] initWithViewController:self]];
 }
 
 #pragma mark - UITextFieldDelegate
@@ -42,8 +45,7 @@
                 NSString *usr = [alertView textFieldAtIndex:0].text;
                 NSString *pwd = [alertView textFieldAtIndex:1].text;
                 
-                [[WLClient sharedInstance] registerChallengeHandler:self.delegate.challengeHandler];
-                AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+                AppDelegate *delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
                 [delegate.submitAuthProcedureInvocation setParameters:[NSArray arrayWithObjects:usr,pwd, nil]];
                 [delegate.challengeHandler submitAdapterAuthentication:delegate.submitAuthProcedureInvocation options:nil];
             }
@@ -72,8 +74,11 @@
     [alert show];
 
 }
+-(void)displayErrorMessage:(NSString*)errorMessage {
+    
+}
 
--(void)displaySecretData:(NSString*)secretData {
+-(void)displayMessage:(NSString*)secretData {
     UIAlertView * alert =[[UIAlertView alloc ] initWithTitle:NSLocalizedString(@"Message", nil)
                                                      message:secretData
                                                     delegate:self

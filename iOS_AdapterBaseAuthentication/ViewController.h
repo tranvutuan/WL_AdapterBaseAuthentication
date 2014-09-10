@@ -20,5 +20,5 @@ typedef enum {
 @property (strong, nonatomic) IBOutlet UIButton *connectingButton;
 @property (strong, nonatomic) TNAInvokeListener *invokeLinster;
 -(void)showLoginForm;
--(void)displaySecretData:(NSString*)secretData;
+-(void)displayMessage:(NSString*)secretData;
 @end
