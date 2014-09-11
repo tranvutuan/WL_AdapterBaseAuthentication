@@ -25,16 +25,7 @@
 
 #pragma mark - WLDelegate
 -(void)onSuccess:(WLResponse *)response {
-    //NSLog(@"TNA5");
-
-    NSDictionary *dict = [response getResponseJson];
-    BOOL isUseAuthenticated = [dict[@"userInfo"][@"SingleStepAuthRealm"][@"isUserAuthenticated"] integerValue];
-    if (!isUseAuthenticated )
-        [self.controller showLoginForm];
-    else {
-        AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-        [[WLClient sharedInstance] invokeProcedure:delegate.getDataProcedureInvocation withDelegate:[[TNAInvokeListener alloc] initWithViewController:self.controller]];
-    }
+    NSLog(@"%s",__func__);
 }
 -(void)onFailure:(WLFailResponse *)response {
     NSLog(@"%s",__func__);
