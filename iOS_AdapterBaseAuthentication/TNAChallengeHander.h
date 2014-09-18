@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ChallengeHandler.h"
 #import "ViewController.h"
+
 @interface TNAChallengeHander : ChallengeHandler
 @property (strong, nonatomic) ViewController *controller;
+@property (strong, nonatomic) NSString *usr;
+@property (strong, nonatomic) NSString *pwd;
 @end

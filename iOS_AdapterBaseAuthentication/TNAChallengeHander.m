@@ -8,6 +8,13 @@
 #import "TNAConnectionListener.h"
 #import "TNAChallengeHander.h"
 #import "AppDelegate.h"
+#import "TNAKeychain.h"
+
+@interface TNAChallengeHander ()
+@property (strong, nonatomic) AppDelegate *delegate;
+
+@end
+
 @implementation TNAChallengeHander
 
 
@@ -28,27 +35,48 @@
 #pragma mark - Handle the challenge
 -(void)handleChallenge: (WLResponse *)response {
     NSDictionary *responseJSON = [response getResponseJson];
+    self.delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+
     if ([responseJSON[@"authRequired"] intValue] == 1) {
         if ( ![responseJSON[@"errorMessage"] isKindOfClass:[NSNull class]] )
-            [self.controller displayMessage:responseJSON[@"errorMessage"] ];
-        else
-            [self.controller showLoginForm];
+            [self.controller displayMessage:responseJSON[@"errorMessage"] withError:YES ];
+        else {
+            // If usr + pwd are existing, use passLock to do authentication in silence
+            NSData *usr = [TNAKeychain loadValueForKey:NSLocalizedString(@"usr", nil)];
+            NSData *pwd = [TNAKeychain loadValueForKey:NSLocalizedString(@"pwd", nil)];
+            NSData *passLock = [TNAKeychain loadValueForKey:NSLocalizedString(@"passLock", nil)];
+            
+            if ( usr && pwd && passLock)
+                [self.controller displayPassLock:nil];
+            else {
+                [self.controller showLoginForm];
+            }
+        }
     }
-    else
+    else {
+        
+        // Save usr and pwd in keychain
+        if (![TNAKeychain loadValueForKey:NSLocalizedString(@"usr", nil)] && ![TNAKeychain loadValueForKey:NSLocalizedString(@"pwd", nil)]) {
+            [TNAKeychain saveValue:self.usr forKey:NSLocalizedString(@"usr",nil)];
+            [TNAKeychain saveValue:self.pwd forKey:NSLocalizedString(@"pwd",nil)];
+        }
+        
+        
         [self submitSuccess:response];
+    }
 }
 
 #pragma mark - WLDelegate
 -(void) onFailure:(WLFailResponse *)response {
     //NSLog(@"TNA3");
     [self submitFailure:response];
-    [self.controller displayMessage:response.responseText];
+    [self.controller displayMessage:response.responseText withError:YES];
 }
 -(void) onSuccess:(WLResponse *)response {
     //NSLog(@"TNA4 %@",[response getResponseJson]);
     [self submitSuccess:response];
     NSString *message = [response getResponseJson][@"errorMessage"];
-    [self.controller displayMessage:message];
+    [self.controller displayMessage:message withError:YES];
 }
 
 

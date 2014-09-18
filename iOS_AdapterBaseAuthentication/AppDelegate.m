@@ -5,9 +5,10 @@
 //  Created by VuTuan Tran on 2014-09-05.
 //  Copyright (c) 2014 dhltd.apple. All rights reserved.
 //
-
+#import "Constant.h"
+#import "TNAMonitor.h"
 #import "AppDelegate.h"
-
+#import "TNAKeychain.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -19,9 +20,19 @@
                                                                                   procedureName:NSLocalizedString(@"submitAuthentication", nil)];
     self.challengeHandler = [[TNAChallengeHander alloc] initWithRealm:NSLocalizedString(@"authRealmName", nil)];
 
+
     [[WLClient sharedInstance] wlConnectWithDelegate:self];
+    
+    if ([TNAKeychain loadValueForKey:NSLocalizedString(@"passLock", nil)])
+        [TNAMonitor sharedInstance].passLockMode = KeychainExists;
+    else
+        [TNAMonitor sharedInstance].passLockMode = KeychainNotExist;
 
-
+        
+        
+    NSLog(@" usr = %@",[TNAKeychain loadValueForKey:@"usr"]? [[NSString alloc] initWithData:[TNAKeychain loadValueForKey:@"usr"] encoding:(NSUTF8StringEncoding)] : @"nil" );
+    NSLog(@" pwd = %@",[TNAKeychain loadValueForKey:@"pwd"] ? [[NSString alloc] initWithData:[TNAKeychain loadValueForKey:@"pwd"] encoding:(NSUTF8StringEncoding)] : @"nil");
+    NSLog(@" passLock = %@", [TNAKeychain loadValueForKey:@"passLock"] ? [[NSString alloc] initWithData:[TNAKeychain loadValueForKey:@"passLock"] encoding:(NSUTF8StringEncoding)] : @"nil");
     return YES;
 }
 							

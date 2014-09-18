@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>57C2A937-205D-4FD7-B1CA-A87E677A414A</string>
+	<string>DB52421A-86F9-42F8-8D33-0F7689F78E35</string>
 	<key>IDESourceControlProjectName</key>
 	<string>iOS_AdapterBaseAuthentication</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C78E29AB-0DD7-4E0E-BF5C-62C95A9AEA51</key>
-		<string>ssh://github.com/tranvutuan/WL_FormBaseAuthentication.git</string>
+		<key>BD2EC796-F0B0-4313-B2C4-06FDD5CD5A22</key>
+		<string>ssh://github.com/tranvutuan/WL_AdapterBaseAuthentication.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iOS_AdapterBaseAuthentication.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C78E29AB-0DD7-4E0E-BF5C-62C95A9AEA51</key>
+		<key>BD2EC796-F0B0-4313-B2C4-06FDD5CD5A22</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/tranvutuan/WL_FormBaseAuthentication.git</string>
+	<string>ssh://github.com/tranvutuan/WL_AdapterBaseAuthentication.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C78E29AB-0DD7-4E0E-BF5C-62C95A9AEA51</string>
+	<string>BD2EC796-F0B0-4313-B2C4-06FDD5CD5A22</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C78E29AB-0DD7-4E0E-BF5C-62C95A9AEA51</string>
+			<string>BD2EC796-F0B0-4313-B2C4-06FDD5CD5A22</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iOS_AdapterBaseAuthentication</string>
 		</dict>

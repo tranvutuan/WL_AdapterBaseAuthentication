@@ -23,7 +23,7 @@
     NSString *secretData = [response getResponseJson][@"secretData"];
     NSString *errorMessage = [response getResponseJson][@"errorMessage"];
 
-    [self.controller displayMessage:secretData ? secretData : errorMessage];
+    [self.controller displayMessage:secretData ? secretData : errorMessage withError:secretData ? NO : YES];
 
 }
 -(void)onFailure:(WLFailResponse *)response {

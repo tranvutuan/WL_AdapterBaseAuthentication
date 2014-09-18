@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9168DC8A19CB2A960066D514 /* lockPadImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9168DC8919CB2A960066D514 /* lockPadImage.png */; };
+		9168DC8C19CB32F80066D514 /* colorfulHex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9168DC8B19CB32F80066D514 /* colorfulHex.jpg */; };
+		9168DC9319CB4CE30066D514 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9168DC9019CB4CE30066D514 /* NSString+FontAwesome.m */; };
+		9168DC9419CB4CE30066D514 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9168DC9219CB4CE30066D514 /* UIFont+FontAwesome.m */; };
+		9168DC9619CB4EED0066D514 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9168DC9519CB4EED0066D514 /* FontAwesome.ttf */; };
+		917A4DEA19C9E43A004FC9B8 /* TNAMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A4DE419C9E43A004FC9B8 /* TNAMonitor.m */; };
+		917A4DEB19C9E43A004FC9B8 /* TNAPassLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A4DE619C9E43A004FC9B8 /* TNAPassLock.m */; };
+		917A4DEC19C9E43A004FC9B8 /* TNAPassLock.xib in Resources */ = {isa = PBXBuildFile; fileRef = 917A4DE719C9E43A004FC9B8 /* TNAPassLock.xib */; };
+		917A4DF719CA1351004FC9B8 /* TNAKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 917A4DF619CA1351004FC9B8 /* TNAKeychain.m */; };
 		91A5A1C919BF9D01009435E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91A5A1C819BF9D01009435E8 /* Localizable.strings */; };
 		91CEF59519BE19B400B1DF7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CEF59419BE19B400B1DF7C /* Foundation.framework */; };
 		91CEF59719BE19B400B1DF7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CEF59619BE19B400B1DF7C /* CoreGraphics.framework */; };
@@ -57,6 +66,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9168DC8819CB135A0066D514 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		9168DC8919CB2A960066D514 /* lockPadImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lockPadImage.png; sourceTree = "<group>"; };
+		9168DC8B19CB32F80066D514 /* colorfulHex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = colorfulHex.jpg; sourceTree = "<group>"; };
+		9168DC8F19CB4CE30066D514 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		9168DC9019CB4CE30066D514 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		9168DC9119CB4CE30066D514 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		9168DC9219CB4CE30066D514 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		9168DC9519CB4EED0066D514 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		917A4DE319C9E43A004FC9B8 /* TNAMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNAMonitor.h; sourceTree = "<group>"; };
+		917A4DE419C9E43A004FC9B8 /* TNAMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNAMonitor.m; sourceTree = "<group>"; };
+		917A4DE519C9E43A004FC9B8 /* TNAPassLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNAPassLock.h; sourceTree = "<group>"; };
+		917A4DE619C9E43A004FC9B8 /* TNAPassLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNAPassLock.m; sourceTree = "<group>"; };
+		917A4DE719C9E43A004FC9B8 /* TNAPassLock.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TNAPassLock.xib; sourceTree = "<group>"; };
+		917A4DF519CA1351004FC9B8 /* TNAKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNAKeychain.h; sourceTree = "<group>"; };
+		917A4DF619CA1351004FC9B8 /* TNAKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNAKeychain.m; sourceTree = "<group>"; };
 		91A5A1C819BF9D01009435E8 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		91CEF59119BE19B400B1DF7C /* iOS_AdapterBaseAuthentication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_AdapterBaseAuthentication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91CEF59419BE19B400B1DF7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -219,6 +243,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9168DC8E19CB4CD60066D514 /* FontAwsome */ = {
+			isa = PBXGroup;
+			children = (
+				9168DC8F19CB4CE30066D514 /* NSString+FontAwesome.h */,
+				9168DC9019CB4CE30066D514 /* NSString+FontAwesome.m */,
+				9168DC9119CB4CE30066D514 /* UIFont+FontAwesome.h */,
+				9168DC9219CB4CE30066D514 /* UIFont+FontAwesome.m */,
+			);
+			name = FontAwsome;
+			sourceTree = "<group>";
+		};
 		91CEF58819BE19B400B1DF7C = {
 			isa = PBXGroup;
 			children = (
@@ -262,11 +297,10 @@
 		91CEF59A19BE19B400B1DF7C /* iOS_AdapterBaseAuthentication */ = {
 			isa = PBXGroup;
 			children = (
+				9168DC8E19CB4CD60066D514 /* FontAwsome */,
 				91CEF5CE19BE1A0800B1DF7C /* Controllers */,
 				91CEF5CD19BE1A0400B1DF7C /* Views */,
 				91CEF5CC19BE19FD00B1DF7C /* Models */,
-				91CEF5A319BE19B400B1DF7C /* AppDelegate.h */,
-				91CEF5A419BE19B400B1DF7C /* AppDelegate.m */,
 				91CEF5AF19BE19B400B1DF7C /* Images.xcassets */,
 				91CEF59B19BE19B400B1DF7C /* Supporting Files */,
 			);
@@ -276,6 +310,9 @@
 		91CEF59B19BE19B400B1DF7C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9168DC9519CB4EED0066D514 /* FontAwesome.ttf */,
+				9168DC8B19CB32F80066D514 /* colorfulHex.jpg */,
+				9168DC8919CB2A960066D514 /* lockPadImage.png */,
 				91CEF59C19BE19B400B1DF7C /* iOS_AdapterBaseAuthentication-Info.plist */,
 				91CEF63C19BE1A4700B1DF7C /* worklight.plist */,
 				91CEF59D19BE19B400B1DF7C /* InfoPlist.strings */,
@@ -307,12 +344,19 @@
 		91CEF5CC19BE19FD00B1DF7C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				917A4DE319C9E43A004FC9B8 /* TNAMonitor.h */,
+				917A4DE419C9E43A004FC9B8 /* TNAMonitor.m */,
+				917A4DE519C9E43A004FC9B8 /* TNAPassLock.h */,
+				917A4DE619C9E43A004FC9B8 /* TNAPassLock.m */,
 				91CEF5CF19BE1A2400B1DF7C /* TNAChallengeHander.h */,
 				91CEF5D019BE1A2400B1DF7C /* TNAChallengeHander.m */,
 				91CEF5D119BE1A2400B1DF7C /* TNAConnectionListener.h */,
 				91CEF5D219BE1A2400B1DF7C /* TNAConnectionListener.m */,
 				91CEF5D319BE1A2400B1DF7C /* TNAInvokeListener.h */,
 				91CEF5D419BE1A2400B1DF7C /* TNAInvokeListener.m */,
+				917A4DF519CA1351004FC9B8 /* TNAKeychain.h */,
+				917A4DF619CA1351004FC9B8 /* TNAKeychain.m */,
+				9168DC8819CB135A0066D514 /* Constant.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -320,6 +364,7 @@
 		91CEF5CD19BE1A0400B1DF7C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				917A4DE719C9E43A004FC9B8 /* TNAPassLock.xib */,
 				91CEF5A619BE19B400B1DF7C /* Main_iPhone.storyboard */,
 				91CEF5A919BE19B400B1DF7C /* Main_iPad.storyboard */,
 			);
@@ -329,6 +374,8 @@
 		91CEF5CE19BE1A0800B1DF7C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				91CEF5A319BE19B400B1DF7C /* AppDelegate.h */,
+				91CEF5A419BE19B400B1DF7C /* AppDelegate.m */,
 				91CEF5AC19BE19B400B1DF7C /* ViewController.h */,
 				91CEF5AD19BE19B400B1DF7C /* ViewController.m */,
 			);
@@ -501,6 +548,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = dhltd.apple;
 				TargetAttributes = {
+					91CEF59019BE19B400B1DF7C = {
+						DevelopmentTeam = SH98VX7M7R;
+					};
 					91CEF5B419BE19B500B1DF7C = {
 						TestTargetID = 91CEF59019BE19B400B1DF7C;
 					};
@@ -533,14 +583,18 @@
 				91CEF63A19BE1A3C00B1DF7C /* SplashImageViewController-Landscape.xib in Resources */,
 				91CEF5AB19BE19B400B1DF7C /* Main_iPad.storyboard in Resources */,
 				91CEF63719BE1A3C00B1DF7C /* Cookies.mom in Resources */,
+				9168DC9619CB4EED0066D514 /* FontAwesome.ttf in Resources */,
 				91CEF5B019BE19B400B1DF7C /* Images.xcassets in Resources */,
 				91CEF63B19BE1A3C00B1DF7C /* SplashImageViewController-Portrait.xib in Resources */,
+				9168DC8C19CB32F80066D514 /* colorfulHex.jpg in Resources */,
 				91CEF63919BE1A3C00B1DF7C /* PleaseWaitViewController~iPhone.xib in Resources */,
 				91CEF63619BE1A3C00B1DF7C /* Localizations.bundle in Resources */,
 				91CEF5A819BE19B400B1DF7C /* Main_iPhone.storyboard in Resources */,
+				917A4DEC19C9E43A004FC9B8 /* TNAPassLock.xib in Resources */,
 				91A5A1C919BF9D01009435E8 /* Localizable.strings in Resources */,
 				91CEF63D19BE1A4700B1DF7C /* worklight.plist in Resources */,
 				91CEF63819BE1A3C00B1DF7C /* PleaseWaitViewController~iPad.xib in Resources */,
+				9168DC8A19CB2A960066D514 /* lockPadImage.png in Resources */,
 				91CEF59F19BE19B400B1DF7C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,8 +614,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9168DC9319CB4CE30066D514 /* NSString+FontAwesome.m in Sources */,
+				917A4DEA19C9E43A004FC9B8 /* TNAMonitor.m in Sources */,
+				917A4DF719CA1351004FC9B8 /* TNAKeychain.m in Sources */,
 				91CEF5AE19BE19B400B1DF7C /* ViewController.m in Sources */,
+				9168DC9419CB4CE30066D514 /* UIFont+FontAwesome.m in Sources */,
 				91CEF5D719BE1A2400B1DF7C /* TNAInvokeListener.m in Sources */,
+				917A4DEB19C9E43A004FC9B8 /* TNAPassLock.m in Sources */,
 				91CEF5A519BE19B400B1DF7C /* AppDelegate.m in Sources */,
 				91CEF5A119BE19B400B1DF7C /* main.m in Sources */,
 				91CEF5D619BE1A2400B1DF7C /* TNAConnectionListener.m in Sources */,
@@ -700,6 +759,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WorklightAPI/Frameworks",
@@ -718,6 +779,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -727,6 +789,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/WorklightAPI/Frameworks",
@@ -745,6 +809,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

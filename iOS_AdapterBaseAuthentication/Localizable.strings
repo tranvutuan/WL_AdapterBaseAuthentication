@@ -17,3 +17,7 @@
 "submitProcedure" = "submitAuthentication";
 "getdataProcedure" = "getSecretData";
 "procedureName" = "getSecretData";
+"passLock" = "passLock";
+"usr" = "usr";
+"pwd" = "pwd";
+"Enter pass code" = " Enter pass code";

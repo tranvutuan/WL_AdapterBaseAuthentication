@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TNAKeychain.h"
 #import "TNAChallengeHander.h"
 #import "WLProcedureInvocationData.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate, WLDelegate>
