@@ -68,7 +68,6 @@ static TNAMonitor *sharedInstance = nil;
             
             if (completion)
                 completion(FailureMessageType);
-            
         }
         else {
             if (completion)

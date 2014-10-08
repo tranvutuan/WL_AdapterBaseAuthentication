@@ -64,7 +64,7 @@
     /* Show asterisk as FACamera */
     id lockIcon  = [NSString fontAwesomeIconStringForEnum:FACertificate];
 
-    self.codeLabel.font = [UIFont fontWithName:kFontAwesomeFamilyName size:30.f];
+    self.codeLabel.font = [UIFont fontWithName:kFontAwesomeFamilyName size:20.f];
     [self.asterisk appendString:[NSString stringWithFormat:@"%@", lockIcon]];
     self.codeLabel.text = self.asterisk;
     

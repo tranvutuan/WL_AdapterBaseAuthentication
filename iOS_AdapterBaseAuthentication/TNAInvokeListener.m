@@ -18,7 +18,7 @@
 
 #pragma mark - WLDelegate
 -(void)onSuccess:(WLResponse *)response {
-    //NSLog(@"TNA1 %@",[response getResponseJson]);
+    NSLog(@"TNA1 %@",[response getResponseJson]);
 
     NSString *secretData = [response getResponseJson][@"secretData"];
     NSString *errorMessage = [response getResponseJson][@"errorMessage"];

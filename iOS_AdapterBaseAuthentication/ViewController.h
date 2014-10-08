@@ -18,7 +18,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *connectingButton;
 @property (strong, nonatomic) TNAInvokeListener *invokeLinster;
 @property (strong, nonatomic) IBOutlet UIButton *passLockButton;
-@property (strong, nonatomic) IBOutlet UIButton *removePassLockButton;
 @property (strong, nonatomic) IBOutlet UIButton *lockButton;
 
 @property (strong, nonatomic) IBOutlet UIButton *signOut;

@@ -20,7 +20,6 @@
                                                                                   procedureName:NSLocalizedString(@"submitAuthentication", nil)];
     self.challengeHandler = [[TNAChallengeHander alloc] initWithRealm:NSLocalizedString(@"authRealmName", nil)];
 
-
     [[WLClient sharedInstance] wlConnectWithDelegate:self];
     
     if ([TNAKeychain loadValueForKey:NSLocalizedString(@"passLock", nil)])

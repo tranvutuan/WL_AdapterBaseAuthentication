@@ -28,7 +28,7 @@
                                     <action selector="connectToServer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eMb-Ig-Ido"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="D2c-ym-fJx">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="D2c-ym-fJx">
                                 <rect key="frame" x="21" y="264" width="279" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196078431372548" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,18 +38,6 @@
                                 </state>
                                 <connections>
                                     <action selector="displayPassLock:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6bW-ad-gbt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ajI-RQ-0nO">
-                                <rect key="frame" x="21" y="264" width="279" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Remove passLock">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="deletePasslock:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MuQ-7I-2T5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -68,7 +56,7 @@
                             </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="dj1-Xq-LUu" userLabel="Right">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="v8G-IA-dCw">
+                            <button key="customView" hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="v8G-IA-dCw">
                                 <rect key="frame" x="260" y="4" width="44" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -86,7 +74,6 @@
                         <outlet property="connectingButton" destination="Boy-ii-aTH" id="eWK-LK-A09"/>
                         <outlet property="lockButton" destination="itS-jF-0Yq" id="96E-qr-BKc"/>
                         <outlet property="passLockButton" destination="D2c-ym-fJx" id="7il-kw-PNb"/>
-                        <outlet property="removePassLockButton" destination="ajI-RQ-0nO" id="sR8-OK-uxE"/>
                         <outlet property="signOut" destination="v8G-IA-dCw" id="VzM-wz-5VG"/>
                     </connections>
                 </viewController>
