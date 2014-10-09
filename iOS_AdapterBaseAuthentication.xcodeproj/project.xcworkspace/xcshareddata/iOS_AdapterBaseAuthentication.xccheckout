@@ -10,29 +10,29 @@
 	<string>iOS_AdapterBaseAuthentication</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>BD2EC796-F0B0-4313-B2C4-06FDD5CD5A22</key>
+		<key>012DB78FF9A1B2FB8DDDD1799A4209ACA8EE4257</key>
 		<string>ssh://github.com/tranvutuan/WL_AdapterBaseAuthentication.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iOS_AdapterBaseAuthentication.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>BD2EC796-F0B0-4313-B2C4-06FDD5CD5A22</key>
+		<key>012DB78FF9A1B2FB8DDDD1799A4209ACA8EE4257</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/tranvutuan/WL_AdapterBaseAuthentication.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>BD2EC796-F0B0-4313-B2C4-06FDD5CD5A22</string>
+	<string>012DB78FF9A1B2FB8DDDD1799A4209ACA8EE4257</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>BD2EC796-F0B0-4313-B2C4-06FDD5CD5A22</string>
+			<string>012DB78FF9A1B2FB8DDDD1799A4209ACA8EE4257</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iOS_AdapterBaseAuthentication</string>
 		</dict>

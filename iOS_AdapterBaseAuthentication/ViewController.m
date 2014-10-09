@@ -31,6 +31,8 @@
     self.passLock.frame = CGRectMake(passLock_x, -CGRectGetHeight(self.passLock.frame), passLockWith, passLockHeight);
     [self.view addSubview:self.passLock];
     
+    [self connectToServer:nil];
+    
     /* Hide or show lock and unlock button */
     [self refreshUI];
     

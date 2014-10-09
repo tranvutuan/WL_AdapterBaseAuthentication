@@ -21,9 +21,10 @@ static TNAMonitor *sharedInstance = nil;
 
 #pragma mark - Get the shared instance and create it if necessary.
 + (TNAMonitor *)sharedInstance {
-    if (sharedInstance == nil) {
-        sharedInstance = [[TNAMonitor alloc] init];
-    }
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[self alloc] init];
+    });
     
     return sharedInstance;
 }
@@ -36,6 +37,12 @@ static TNAMonitor *sharedInstance = nil;
         self.currAttempt = 0;
         self.enteredPasscode = [[NSMutableString alloc] initWithCapacity:4];
     }
+    /*
+     static dispatch_once_t onceToken;
+     dispatch_once(&onceToken, ^{
+     sharedManager = [[self alloc] init];
+     });
+     return sharedManager;*/
     
     return self;
 }
